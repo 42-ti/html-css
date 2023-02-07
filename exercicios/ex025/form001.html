@@ -8,9 +8,13 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form>
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome <input type="text" name="sobrenome" id="sobrenome"></p>
+    <form action="cadastro.php" method="post" autocomplete="off"> <!--se não inserir nada, o método padrão é o get-->
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome"> <!-- name é mais usado em PHP e id em JavaScript-->
+        </p>
         <p><input type="submit" value="Enviar"></p>
     </form>
 </body>
